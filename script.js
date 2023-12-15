@@ -94,26 +94,7 @@ TicTacToe.prototype.mark = function(column) {
 
 };
 
-//  Board:
-//  _____________
-//    | 0 | 1 | 2 |
-//  |---|---|---|
-//  | 3 | 4 | 5 |
-//    |---|---|---|
-//    | 6 | 7 | 8 |
-//  -------------
-// 
-// We need to go through all columns like
-// 
-// 012, 345, 678 - Horizontal
-// 036, 147, 258 - Vertical
-// 048, 246      - Diagonal
-//
-// If mark is present in all columns of any combinations then user won
-//
-// Instead of going through each combination manually we can make use of loops,
-// So that it can be used for any grids like 7 X 7
-//
+
 
 TicTacToe.prototype.didWin = function(mark) {
 
